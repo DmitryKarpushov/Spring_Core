@@ -11,7 +11,7 @@ public class TestSpring {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml"
         );
-        //Второй аргумент, бин которого хотим получить.
+        //Второй аргумент, бин которого хотим получить
         TestBean testBean = context.getBean("testBean",TestBean.class);
 
         System.out.println(testBean.getName());
