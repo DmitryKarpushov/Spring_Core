@@ -1,7 +1,7 @@
 package org.example.Spring_Core;
 
 /**
- * @author Дмитрий Крпушов 27.08.2022..
+ * @author Дмитрий Крпушов 27.08.2022
  */
 public class TestBean {
     private String name;
