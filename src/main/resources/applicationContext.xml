@@ -6,8 +6,13 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-            <bean id="musicBean"
-                  class="org.example.Spring_Core.RapMusic">
-            </bean>
+    <bean id="musicBean"
+          class="org.example.Spring_Core.ClassicalMusic">
+    </bean>
+
+    <bean id="musicPlayer"
+          class="org.example.Spring_Core.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+    </bean>
 
 </beans>

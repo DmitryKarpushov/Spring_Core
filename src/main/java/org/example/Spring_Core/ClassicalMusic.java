@@ -6,6 +6,6 @@ package org.example.Spring_Core;
 public class ClassicalMusic implements Music{
     @Override
     public String getSong() {
-        return "Hungarian Phapsody";
+        return "Hungarian Rhapsody";
     }
 }
