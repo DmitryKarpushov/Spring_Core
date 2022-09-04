@@ -12,9 +12,12 @@ public class TestSpring {
                 "applicationContext.xml"
         );
         //Второй аргумент, бин которого хотим получить
-        TestBean testBean = context.getBean("testBean",TestBean.class);
+        Music music = context.getBean("musicBean",Music.class);
 
-        System.out.println(testBean.getName());
+        MusicPlayer musicPlayer = new MusicPlayer(music);
+
+        musicPlayer.playMusic();
+
         //Закрываем context. Обязательно.
         context.close();
     }
